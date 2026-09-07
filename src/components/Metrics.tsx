@@ -1,0 +1,6 @@
+import { motion } from 'framer-motion'
+import { PolarAngleAxis, RadialBar, RadialBarChart, ResponsiveContainer } from 'recharts'
+import SectionTitle from './SectionTitle'
+import { metrics } from '../data/portfolio'
+
+export default function Metrics(){return <section className="section-shell section-pad metrics-section"><SectionTitle eyebrow="05 / VALIDATION" title="Selected project metrics." copy="Representative model results from specific detection and segmentation projects — not a blanket performance claim."/><div className="metrics-grid">{metrics.map((m,i)=><motion.article key={m.model} initial={{opacity:0,scale:.96}} whileInView={{opacity:1,scale:1}} transition={{delay:i*.08}} viewport={{once:true}}><div className="radial"><ResponsiveContainer width="100%" height="100%"><RadialBarChart innerRadius="78%" outerRadius="100%" data={[{value:m.value,fill:i%2?'#8b7cff':'#58dcf4'}]} startAngle={90} endAngle={-270}><PolarAngleAxis type="number" domain={[0,100]} tick={false}/><RadialBar dataKey="value" background={{fill:'rgba(255,255,255,.06)'}} cornerRadius={8}/></RadialBarChart></ResponsiveContainer><strong>{m.value}%</strong></div><span>{m.metric}</span><h3>{m.model}</h3></motion.article>)}</div></section>}

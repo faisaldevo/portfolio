@@ -1,0 +1,3 @@
+import { Link2, Mail } from 'lucide-react'
+import { socials } from '../data/portfolio'
+export default function Footer(){return <footer><div className="section-shell footer-main"><div><strong>Muhammad Faisal Shakeel</strong><span>Computer Vision & AI Engineer</span></div><p>Building intelligent systems from visual data.</p><div><a href={socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><Link2/></a><a href={socials.email} aria-label="Email"><Mail/></a></div></div><div className="section-shell footer-bottom"><span>© {new Date().getFullYear()} Faisal Shakeel</span><span>DESIGNED FOR SIGNAL. BUILT FOR IMPACT.</span></div></footer>}

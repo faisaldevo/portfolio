@@ -1,0 +1,5 @@
+import { Boxes, Combine, Route, SlidersHorizontal } from 'lucide-react'
+import SectionTitle from './SectionTitle'
+const items=[['End-to-End Development','From annotation and preprocessing to inference, tracking, analytics, and integration.'],['Practical Computer Vision','Systems shaped around real cameras, imperfect data, and operational outcomes.'],['Data + AI','Vision paired with Python automation, structured data, GIS, visualization, and reporting.'],['Custom Solutions','Pipelines adapted to your domain, datasets, cameras, videos, and delivery requirements.']]
+const icons=[Route,Boxes,Combine,SlidersHorizontal]
+export default function WhyMe(){return <section className="why-section section-pad"><div className="section-shell"><SectionTitle eyebrow="10 / WORKING TOGETHER" title="Why teams bring me into the loop."/><div className="why-grid">{items.map(([t,p],i)=>{const Icon=icons[i];return <article key={t}><Icon/><span>0{i+1}</span><h3>{t}</h3><p>{p}</p></article>})}</div></div></section>}
