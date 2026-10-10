@@ -1,3 +1,6 @@
+#You can visit my portfolio using this link
+https://lnkd.in/dsnaGcVX 
+[Vercel](https://lnkd.in/dsnaGcVX)/)
 # Faisal Shakeel — Computer Vision & AI Portfolio
 
 A production-ready React portfolio focused on Computer Vision, Machine Learning, Data Analytics, Intelligent Video Processing, GIS, and Transportation Asset Management.
