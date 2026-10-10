@@ -1,5 +1,4 @@
 #You can visit my portfolio using this link
-https://lnkd.in/dsnaGcVX 
 [Vercel](https://portfolio-ashy-two-42.vercel.app/)
 # Faisal Shakeel — Computer Vision & AI Portfolio
 
